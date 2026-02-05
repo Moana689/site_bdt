@@ -1,0 +1,73 @@
+# WordPress .gitignore
+# Adapté pour le projet Bureautique de Tahiti
+
+# WordPress core files (à télécharger lors du déploiement)
+/wp-admin/
+/wp-includes/
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/cache/
+/wp-content/backup*/
+
+# Configuration sensible
+wp-config.php
+wp-config-local.php
+
+# Fichiers système
+.htaccess
+*.log
+*.sql
+*.sqlite
+
+# Environnement local
+.env
+.env.local
+.env.*.local
+
+# IDE et éditeurs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Node modules (si utilisé pour build)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Composer
+/vendor/
+
+# Fichiers de déploiement
+*.zip
+*.tar.gz
+*.rar
+
+# Debug WordPress
+/wp-content/debug.log
+
+# Plugins premium (si achetés)
+# /wp-content/plugins/plugin-premium/
+
+# Thèmes de base WordPress (on garde seulement notre thème)
+# /wp-content/themes/twenty*/
+
+# Sécurité
+*.bak
+*.backup
+*~
