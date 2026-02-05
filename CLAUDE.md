@@ -51,14 +51,14 @@ site_bdt/
 - Langue : Français
 - Thème enfant recommandé pour personnalisations
 
-## MCP Puppeteer
-Pour explorer le site original :
+## MCP Playwright
+Pour explorer le site original, la configuration est dans `.mcp.json` :
 ```json
 {
   "mcpServers": {
-    "puppeteer": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
+    "playwright": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@playwright/mcp@latest"]
     }
   }
 }
@@ -68,12 +68,13 @@ Pour explorer le site original :
 1. [x] Initialisation Git
 2. [x] Création .gitignore
 3. [x] Création CLAUDE.md
-4. [ ] Installation WordPress
-5. [ ] Configuration base de données
-6. [ ] Analyse site existant (via Puppeteer)
-7. [ ] Sélection et installation thème
-8. [ ] Migration du contenu
-9. [ ] Tests et ajustements
+4. [x] Installation WordPress
+5. [x] Configuration base de données (bdt_wordpress créée)
+6. [x] Configuration MCP Playwright
+7. [ ] Analyse site existant (via Playwright)
+8. [ ] Sélection et installation thème
+9. [ ] Migration du contenu
+10. [ ] Tests et ajustements
 
 ## Couleurs du site original
 *(À compléter après analyse)*
@@ -84,4 +85,4 @@ Pour explorer le site original :
 ## Notes
 - Site vitrine pour entreprise de bureautique en Polynésie française
 - Focus sur la présentation des produits/services
-- Design professionnel et moderne
+- Design professionnel et moderne avec version Light et Dark
