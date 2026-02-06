@@ -27,7 +27,7 @@ site_bdt/
 - **Chemin** : `C:\wamp64\www\site_bdt`
 - **PHP** : Version WAMP installée
 - **MySQL** : Via phpMyAdmin WAMP
-- **Base de données** : `bdt_wordpress` (à créer)
+- **Base de données** : `bdt_wordpress`
 
 ## Accès base de données
 - **Host** : localhost
@@ -49,7 +49,9 @@ site_bdt/
 ### WordPress
 - Préfixe de base de données : `bdt_`
 - Langue : Français
-- Thème enfant recommandé pour personnalisations
+- Thème parent : Astra 4.12.2
+- Thème enfant : `bdt-child` (personnalisations CSS et fonctions)
+- Extensions : Contact Form 7, Classic Editor
 
 ## MCP Playwright
 Pour explorer le site original, la configuration est dans `.mcp.json` :
@@ -72,8 +74,8 @@ Pour explorer le site original, la configuration est dans `.mcp.json` :
 5. [x] Configuration base de données (bdt_wordpress créée)
 6. [x] Configuration MCP Playwright
 7. [x] Analyse site existant (via Playwright)
-8. [ ] Sélection et installation thème
-9. [ ] Migration du contenu
+8. [x] Sélection et installation thème (Astra + thème enfant bdt-child)
+9. [x] Migration du contenu (6 pages créées)
 10. [ ] Tests et ajustements
 
 ## Couleurs du site original
@@ -118,9 +120,15 @@ Aures, Brother, Casio, Creality, Exa, Ideal, Tech Five, Toshiba
 3. **Formations** : Formation à l'utilisation des produits
 4. **Service Après-Vente** : 6 techniciens + 1 responsable atelier, pièces détachées, intervention sous 2h, 3 tournées techniques dans les archipels
 
+## Accès WordPress admin
+- **URL** : http://localhost/site_bdt/wp-admin/
+- **Identifiant** : admin_bdt
+- **Mot de passe** : BdT@2026!Papeete
+
 ## Notes
 - Site vitrine pour entreprise de bureautique en Polynésie française
 - Focus sur la présentation des produits/services
 - Design professionnel et moderne avec version Light et Dark
 - Site original en PHP custom avec tables HTML (non responsive, design ancien)
 - Screenshots de référence disponibles dans `docs/screenshot/`
+- WP-CLI disponible via `php wp-cli.phar` depuis la racine du projet

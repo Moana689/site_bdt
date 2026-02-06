@@ -1,0 +1,184 @@
+/*
+ Theme Name:   Bureautique de Tahiti
+ Theme URI:    https://www.bureautiquedetahiti.pf/
+ Description:  Thème enfant Astra pour Bureautique de Tahiti - Polynésie française
+ Author:       Bureautique de Tahiti
+ Author URI:   https://www.bureautiquedetahiti.pf/
+ Template:     astra
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  bdt-child
+*/
+
+/* ==========================================================================
+   Variables & Couleurs BDT
+   ========================================================================== */
+:root {
+    --bdt-bleu-fonce: #000099;
+    --bdt-bleu-lien: #0033FF;
+    --bdt-bleu-clair: #E5F0FE;
+    --bdt-blanc: #FFFFFF;
+    --bdt-noir: #000000;
+}
+
+/* ==========================================================================
+   Typographie générale
+   ========================================================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--bdt-bleu-fonce);
+}
+
+a {
+    color: var(--bdt-bleu-lien);
+}
+
+a:hover {
+    color: var(--bdt-bleu-fonce);
+}
+
+/* ==========================================================================
+   Header / Navigation
+   ========================================================================== */
+.main-header-bar {
+    background-color: var(--bdt-blanc);
+    border-bottom: 3px solid var(--bdt-bleu-clair);
+}
+
+.main-navigation a,
+.ast-header-break-point .ast-header-custom-item a {
+    color: var(--bdt-bleu-fonce);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+.main-navigation a:hover,
+.main-navigation .current-menu-item > a {
+    color: var(--bdt-bleu-lien);
+}
+
+/* Style barre de navigation similaire à l'original */
+.main-header-menu > .menu-item > a {
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-header-menu > .menu-item > a:hover {
+    background-color: var(--bdt-bleu-clair);
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   Contenu
+   ========================================================================== */
+.entry-content h2 {
+    color: var(--bdt-bleu-fonce);
+    border-bottom: 2px solid var(--bdt-bleu-clair);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.entry-content h3 {
+    color: var(--bdt-bleu-fonce);
+}
+
+/* Blocs CTA page d'accueil */
+.bdt-hero {
+    background: linear-gradient(135deg, var(--bdt-bleu-clair) 0%, var(--bdt-blanc) 100%);
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+    background-color: var(--bdt-bleu-fonce);
+    color: var(--bdt-blanc);
+}
+
+.site-footer a {
+    color: var(--bdt-bleu-clair);
+}
+
+.site-footer a:hover {
+    color: var(--bdt-blanc);
+}
+
+.ast-small-footer {
+    background-color: var(--bdt-noir);
+    color: #ccc;
+}
+
+/* ==========================================================================
+   Boutons
+   ========================================================================== */
+.wp-block-button__link,
+button,
+input[type="submit"],
+.ast-button,
+.button {
+    background-color: var(--bdt-bleu-fonce);
+    color: var(--bdt-blanc);
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.wp-block-button__link:hover,
+button:hover,
+input[type="submit"]:hover,
+.ast-button:hover,
+.button:hover {
+    background-color: var(--bdt-bleu-lien);
+    color: var(--bdt-blanc);
+}
+
+/* ==========================================================================
+   Formulaire de contact (CF7)
+   ========================================================================== */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"],
+.wpcf7 textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.wpcf7 input[type="text"]:focus,
+.wpcf7 input[type="email"]:focus,
+.wpcf7 input[type="tel"]:focus,
+.wpcf7 textarea:focus {
+    border-color: var(--bdt-bleu-fonce);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 153, 0.2);
+}
+
+.wpcf7 input[type="submit"] {
+    background-color: var(--bdt-bleu-fonce);
+    color: white;
+    cursor: pointer;
+    width: auto;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 768px) {
+    .entry-content div[style*="display:flex"] {
+        flex-direction: column !important;
+    }
+}

@@ -8,10 +8,35 @@
 /wp-content/upgrade/
 /wp-content/cache/
 /wp-content/backup*/
+/wp-content/themes/index.php
+
+# Fichiers racine WordPress (core)
+/index.php
+/license.txt
+/readme.html
+/wp-activate.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-config-sample.php
+/wp-cron.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
 
 # Configuration sensible
 wp-config.php
 wp-config-local.php
+
+# WP-CLI
+wp-cli.phar
+
+# Fichier Windows nul
+nul
 
 # Fichiers système
 .htaccess
