@@ -42,6 +42,7 @@ nul
 .htaccess
 *.log
 *.sql
+!docs/DB/*.sql
 *.sqlite
 
 # Environnement local
