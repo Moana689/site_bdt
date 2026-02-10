@@ -43,34 +43,46 @@ Refonte du site vitrine https://www.bureautiquedetahiti.pf/ (PHP custom, tables 
 - [x] Menu "Menu Principal" (ID:2) : Accueil > Produits > Promotions > Services > Contact
 - [x] Assigné aux emplacements `primary` et `mobile_menu`
 
-## Phase 4 - Corrections et améliorations (À FAIRE)
+## Phase 4 - Corrections et améliorations (TERMINÉE)
 
-### Bugs identifiés
-- [ ] **Liens morts** sur la page Accueil : les 3 blocs CTA ("Nos Produits", "Nos Services", "Contactez-nous") pointent vers des URLs qui ne fonctionnent pas - vérifier les permaliens et/ou corriger les href
-- [ ] **Permaliens** : vérifier que le `.htaccess` est bien généré (WAMP + mod_rewrite activé)
+### Bugs corrigés
+- [x] **Liens morts** : corrigés en configurant les permaliens `/%postname%/` et le `.htaccess`
+- [x] **Permaliens** : `.htaccess` avec mod_rewrite configuré, structure `/%postname%/`
+- [x] **Page Actualités vide** : était assignée comme `page_for_posts`, réassignée en page statique
+- [x] **Conflit MultiViews** : les screenshots dans la racine causaient des 404 (Apache MultiViews), fichiers déplacés dans `docs/screenshots-refonte/`
 
-### Images
+### Design / Template (refonte complète v2.0)
+- [x] **Refonte CSS complète** (`style.css` v2.0) : design system avec variables CSS, ombres, animations hover, border-radius cohérents
+- [x] **Hero section** : gradient bleu foncé avec titre, slogan, description sur la page d'accueil
+- [x] **Cards CTA** : 3 cartes stylisées avec icônes, descriptions et boutons outline (Produits, Services, Contact)
+- [x] **Section Marques** : fond bleu pâle avec pills cliquables pour chaque marque
+- [x] **Section Titles** : titres centrés avec underline décoratif bleu
+- [x] **Header** : top bar bleu foncé (téléphones + horaires) + header Astra avec navigation uppercase
+- [x] **Footer** : footer 4 colonnes (À propos, Liens rapides, Contact, Horaires) + barre copyright + lien Facebook
+- [x] **Footer Astra** : supprimé le "Powered by Astra" par défaut
+- [x] **Page Produits** : grille responsive des 20 catégories avec effet hover
+- [x] **Page Services** : grille 2x2 avec bordure latérale, icônes, horaires
+- [x] **Page Promotions** : bannière gradient + cartes avantages avec icônes
+- [x] **Page Contact** : grille formulaire CF7 + coordonnées/horaires + Google Maps
+- [x] **Page Actualités** : cartes avec bordure latérale bleue et dates stylisées
+- [x] **Responsive** : testé et fonctionnel sur mobile (375px), tablette (768px) et desktop (1280px)
+  - Cards empilées en colonne sur mobile
+  - Footer en colonne unique sur mobile
+  - Top bar centrée, horaires masqués sur mobile
+  - Menu hamburger Astra natif sur mobile/tablette
+
+### Images (en attente)
 - [ ] **Logo BDT** : récupérer/intégrer le logo de l'entreprise (l'utilisateur doit fournir le fichier)
 - [ ] **Bannière header** : le site original a une bannière avec des photos de produits - créer un visuel similaire ou un slider
 - [ ] **Images des pages Services** : show room, livraison, formation, SAV (4 photos sur le site original)
-- [ ] **Images des blocs CTA** : "Nos Produits", "Nos Services", "Contactez-nous" (3 images sur le site original)
-- [ ] **Logos des marques** : bandeau Aures, Brother, Casio, Creality, Exa, Ideal, Tech Five, Toshiba en footer ou section dédiée
-
-### Design / Template
-- [ ] **Refonte du design** : le rendu actuel est trop basique (styles inline, pas de vrai layout)
-  - Retravailler la page d'accueil avec un hero section, des cartes stylisées, etc.
-  - Améliorer la hiérarchie visuelle et les espacements
-  - Utiliser les blocs Gutenberg ou un page builder léger
-- [ ] **Header** : configurer correctement le header Astra (logo + titre + navigation)
-- [ ] **Footer** : ajouter une section avec coordonnées, horaires, liens rapides, réseaux sociaux
-- [ ] **Responsive** : tester et ajuster sur mobile/tablette
+- [ ] **Logos des marques** : remplacer les noms textuels par les logos réels
 
 ## Phase 5 - Contenu enrichi (À FAIRE)
 
 - [ ] Ajouter des fiches produits représentatives par catégorie (au moins 1-2 produits phares par catégorie)
 - [ ] Intégrer les actualités comme vrais articles WordPress (et non contenu statique)
 - [ ] Configurer le formulaire Contact Form 7 avec les bons destinataires
-- [ ] Ajouter le lien Facebook dans le header ou footer
+- [x] Ajouter le lien Facebook dans le header ou footer (ajouté dans le footer + page Actualités)
 
 ## Phase 6 - Finalisation (À FAIRE)
 
